@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SMKN 4 Tasikmalaya</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Styling tambahan untuk gambar kartu agar proporsional dan rapi */
+      .card img {
+        border-radius: 8px;
+        object-fit: cover;
+        height: 200px;
+        width: 100%;
+      }
+
+      /* Hover effect pada kartu berita */
+      .card:hover {
+        transform: translateX(10px);
+        transition: transform 0.3s ease;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Warna background dan teks untuk bagian total guru dan siswa */
+      .total-section {
+        background-color: #31e8f5;
+        color: #2bdeeb;
+        padding: 20px 0;
+        border-radius: 0 0 8px 8px;
+      }
+
+      /* Margin bawah pada setiap kartu total */
+      .total-card {
+        margin-bottom: 15px;
+      }
+
+      /* Style untuk iframe peta agar responsif */
+      iframe {
+        max-width: 100%;
+        height: 450px;
+        border: 0;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-info text-white">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="https://1.bp.blogspot.com/-TvAfTQttnag/VmOGnts3X0I/AAAAAAAACx8/LU5_7BaTWPQ/s320/LOGO%2BSMKN4%2B2015.png"
+            alt="SMKN 4 TASIKMALAYA"
+            style="width: 40px; height: auto; margin-right: 10px"
+          />
+          <a href="halamansmk4.html" class="link-div">
+            SMKN 4 <br />
+            TASIKMALAYA
+          </a>
+
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active mx-1"
+                href="halaman ekstrakulikuler.html"
+                >Eksrtakulikuler</a
+              >
+            </li>
+
+            <!-- Dropdown Profil -->
+            <li class="nav-item dropdown mx-1">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Profil</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="VIsidanmisi.html"
+                    >Visi Dan Misi</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="halaamansejarah.html"
+                    >Sejarah</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Dropdown Lainnya -->
+            <li class="nav-item dropdown mx-1">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Dropdown</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Visi Dan Misi</a></li>
+                <li><a class="dropdown-item" href="berita.html">Berita
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- CAROUSEL -->
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://koropak.co.id/wp-content/uploads/artikel/smkn-4-tasikmalaya.jpg"
+            class="d-block w-100"
+            alt="Slide 1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://i.ytimg.com/vi/WxxF-n4kZqE/maxresdefault.jpg"
+            class="d-block w-100"
+            alt="Slide 2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2024/07/14/2757322712.png"
+            class="d-block w-100"
+            alt="Slide 3"
+          />
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- END CAROUSEL -->
+
+    <div class="container mt-5">
+      <!-- SECTION NEWS -->
+      <section
+        class="mb-5 p-4 rounded"
+        style="background-color: #31e8f5; color: white"
+      >
+        <h2><i class="bi bi-globe-asia-australia"></i> News</h2>
+        <h3 class="text-center fw-semibold mb-4">HARI INI</h3>
+        <div class="row">
+          <!-- News Card 1 -->
+          <div class="col-lg-6 mb-4">
+            <div class="card shadow-lg">
+              <img
+                src="https://assets.radartasik.id/main/2023/10/SMKN-4.jpg"
+                alt="News Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-5">
+                  SMKN 4 Tasikmalaya Koneksikan Iduka dengan Pencari Kerja –
+                  Radartasik.id
+                </h5>
+                <p class="card-text">
+                  Gambar bisa saja memiliki hak cipta. Pelajari Lebih Lanjut
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- News Card 2 -->
+          <div class="col-lg-6 mb-4">
+            <div class="card shadow-lg">
+              <img
+                src="https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2023/03/02/IMG_20230302_120715-2211547420.jpg"
+                alt="News Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-5">
+                  Sinergi Bagi Negeri, DAM Jalin Kerjasama Dengan SMKN 4
+                  Tasikmalaya - Ayo Tasik
+                </h5>
+                <p class="card-text">
+                  Gambar bisa saja memiliki hak cipta. Pelajari Lebih Lanjut
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END SECTION NEWS -->
+
+      <!-- SECTION TOTAL GURU DAN SISWA -->
+      <section class="total-section rounded">
+        <div class="container">
+          <h3 class="text-white mb-4">
+            <i class="bi bi-bar-chart-fill"></i> Total Guru Dan Siswa
+          </h3>
+          <div class="row text-white">
+            <!-- Counter card helper function -->
+            <div class="col-6 col-md-3 total-card">
+              <div class="card btn btn-primary text-center">
+                <h2>
+                  <i class="bi bi-person-fill"></i> <span id="counter">0</span>
+                </h2>
+                <h5>Peserta Didik</h5>
+              </div>
+            </div>
+
+            <!-- Other totals -->
+            <div class="col-6 col-md-3 total-card">
+              <div class="card btn btn-primary text-center">
+                <h2>
+                  <i class="bi bi-person-fill"></i>
+                  <span class="count-up">180</span>
+                </h2>
+                <h5>Guru</h5>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 total-card">
+              <div class="card btn btn-primary text-center">
+                <h2>
+                  <i class="bi bi-person-fill"></i>
+                  <span class="count-up">180</span>
+                </h2>
+                <h5>Guru</h5>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 total-card">
+              <div class="card btn btn-primary text-center">
+                <h2>
+                  <i class="bi bi-person-fill"></i>
+                  <span class="count-up">180</span>
+                </h2>
+                <h5>Guru</h5>
+              </div>
+            </div>
+
+            <!-- Tambahan kartu total bisa ditambah di sini jika diperlukan -->
+          </div>
+        </div>
+      </section>
+      <!-- END SECTION TOTAL -->
+
+      <!-- SECTION MAP & CONTACT -->
+      <section class="mt-4 mb-5">
+        <div class="row" style="background-color: #31e8f5; color: white;padding: 20px; border-radius: 8px;">
+            <!-- footer -->
+             <footer>
+              
+             </footer>
+        <!-- maps -->
+         <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="fw-bold mb-3">Peta</h1>
+              <div class="row">
+                <div class="col-lg-6">
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+        <!-- ttup maps -->
+          <!-- CONTACT -->
+          <div class="col-lg-6">
+            <h3>Kontak</h3>
+            <ul class="list-unstyled fs-5">
+              <li>
+                <i class="bi bi-geo-alt-fill"></i> Jl. Ir. H. Juanda No. 17
+                Tasikmalaya
+              </li>
+              <li><i class="bi bi-envelope-fill"></i> smkn4.tasik@gmail.com</li>
+              <li><i class="bi bi-telephone-fill"></i> (0265) 311177</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- END SECTION MAP & CONTACT -->
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-6xFqkZjcb+ZDywPm4/UAZhXy6q+q5Rw4S+r2TXttO/w2L8xUkcvlRlbvfOkMnpRO"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Optional: Script animasi counter -->
+    <script>
+      // Animasi counter angka peserta didik
+      document.addEventListener("DOMContentLoaded", () => {
+        const counter = document.getElementById("counter");
+        let count = 0;
+        const target = 1000; // target angka peserta didik
+        const step = Math.ceil(target / 100); // hitung step per interval
+
+        const interval = setInterval(() => {
+          count += step;
+          if (count >= target) {
+            count = target;
+            clearInterval(interval);
+          }
+          counter.textContent = count.toLocaleString();
+        }, 20);
+      });
+    </script>
+        <!-- SECTION ALAMAT -->
+    <div class="row mt-3" style="background-color: #31e8f5;">                    
+      <div class="col-lg-12">
+        <div class="row">
+                <div class="col-lg-6">
+                <h3>Peta</h3>     
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.213116362029!2d108.25189907500041!3d-7.329945292678408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f59eeb6bda36f%3A0xa9e724a275da6c2d!2sSMK%20Negeri%204%20Tasikmalaya!5e0!3m2!1sid!2sid!4v1755761054182!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              <div class="col-lg-4">
+                <h3>Kontak</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+  </svg>+62265312059 <br>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+    <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+    <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+  </svg> info@smkn4-tsm.sch.id
+
+          </div>
+          <div class="col-lg-2">
+            <h3 >Tautan</h3>
+            <li>Komendibud <a href="#"></a></li>
+            <li>Provinnsi Jabar <a href="#"></a></li>
+            <li>Ruang GTK <a href="#"></a></li>
+          </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12">
+          <div class="text-center">
+            <hr>
+            &copy;2025. All rights reverse. <br>
+            Dimasak Dengan Boostrap Oleh Tofan 
+          </div>
+        </div>
+       </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5000ca" fill-opacity="1" d="M0,288L120,282.7C240,277,480,267,720,224C960,181,1200,107,1320,69.3L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+
+        <!-- TUTUP SECTION ALAMAT --> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
